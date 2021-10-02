@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -17,6 +18,10 @@ export default function Home() {
 
   return (
     <HomeContainer>
+      <Head>
+        <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+        <title>Home | Paulo Xavier</title>
+      </Head>
       <Header />
       <main className="container">
         <HomeHero />

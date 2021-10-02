@@ -1,17 +1,29 @@
+import Head from 'next/head';
+
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
 import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 import BannerProject from '../../../components/BannerProject';
 import Header from '../../../components/Header';
 import { ProjectContainer } from '../../../styles/ProjectStyles';
 
 function Projeto() {
+  const {
+    query: { slug }
+  } = useRouter();
+
   useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
+
   return (
     <ProjectContainer>
+      <Head>
+        <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+        <title>{slug} | Paulo Xavier</title>
+      </Head>
       <Header />
       <BannerProject
         title="Projeto 1"
