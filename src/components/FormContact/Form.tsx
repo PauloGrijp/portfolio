@@ -2,7 +2,7 @@ import { FormContainer, Input, TextArea } from './styles';
 
 export default function Form() {
   return (
-    <FormContainer>
+    <FormContainer data-aos="fade-up">
       <Input placeholder="Nome" required />
       <Input type="email" placeholder="E-mail" required />
       <TextArea placeholder="Mensagem" required />

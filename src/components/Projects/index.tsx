@@ -34,7 +34,7 @@ function Projects() {
           img="https://img.freepik.com/free-vector/black-elegant-website-design-template-business-development_136420-21.jpg?size=626&ext=jpg"
         />
       </section>
-      <button type="button">
+      <button type="button" data-aos="fade-up">
         <Link href="/projetos">
           <a>Ver todos os projetos</a>
         </Link>

@@ -1,8 +1,15 @@
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
+import { useEffect } from 'react';
 import BannerProject from '../../../components/BannerProject';
 import Header from '../../../components/Header';
 import { ProjectContainer } from '../../../styles/ProjectStyles';
 
 function Projeto() {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
   return (
     <ProjectContainer>
       <Header />
@@ -12,7 +19,7 @@ function Projeto() {
         imgUrl="https://img.freepik.com/free-vector/black-elegant-website-design-template-business-development_136420-21.jpg?size=626&ext=jpg"
       />
 
-      <main>
+      <main data-aos="fade-left">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
           voluptatibus explicabo assumenda error rem minima reprehenderit

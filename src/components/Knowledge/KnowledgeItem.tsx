@@ -11,7 +11,7 @@ export default function KnowledgeItem({
   icon
 }: KnowledgeItemContainerProps) {
   return (
-    <KnowledgeItemContainer>
+    <KnowledgeItemContainer data-aos="fade-up">
       <p>{title}</p>
       {icon}
     </KnowledgeItemContainer>
